@@ -1,0 +1,30 @@
+body {
+    background-color:lightgreen;
+}
+
+/* Scrollbar para navegadores basados en Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 6px; /* Ancho del scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 10px; /* Puntas redondeadas */
+    border: 2px solid transparent; /* Espacio alrededor para que parezca más delgado */
+    background-clip: content-box; /* Para que respete el espacio del borde */
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; /* Oculta las flechas */
+  }
+  
+  /* Para navegadores Firefox */
+  * {
+    scrollbar-width: thin; /* Tamaño fino del scrollbar */
+    scrollbar-color: #888 transparent; /* Color del thumb y fondo transparente */
+  }
+  

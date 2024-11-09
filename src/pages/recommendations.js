@@ -31,13 +31,13 @@ function RecommendationsPage() {
     }, []);
 
     return (
-        <div style={{ maxWidth: '600px', margin: 'auto', padding: '20px' }}>
-            <h2>Tus PDFs subidos y recomendaciones</h2>
+        <div style={{ maxWidth: '900px', margin: 'auto', padding: '20px' }}>
+            <h2 style={{ textAlign: 'center', fontFamily: "Futura, sans-serif" }}>Tus PDFs subidos y recomendaciones</h2>
             <ul>
                 {pdfs.map((pdf) => (
                     <li key={pdf._id}>
-                        <strong>{pdf.nombre}</strong>
-                        <p>{pdf.recomendaciones}</p>
+                        <strong style={{ fontFamily: 'Segoe UI'  }}>{pdf.nombre}</strong>
+                        <p style={{ whiteSpace: 'pre-wrap', fontFamily: 'monospace'}}>{pdf.recomendaciones}</p>
                     </li>
                 ))}
             </ul>
