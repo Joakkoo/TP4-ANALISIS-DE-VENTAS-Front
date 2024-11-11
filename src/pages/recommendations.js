@@ -42,7 +42,7 @@ function RecommendationsPage() {
                 ))}
             </ul>
             <Button type="default" onClick={() => window.location.href = '/home'} block>
-                Volver a Home
+                Volver al inicio
             </Button>
         </div>
     );
